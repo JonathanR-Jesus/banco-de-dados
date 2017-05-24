@@ -19,7 +19,7 @@ celular int(11) not null
 
 create table clientes_p_fisica (
 
-cpf int not null primary key auto_increment,
+cpf int not null primary key,
 sexo char not null,
 data_nasciment date not null
 
@@ -31,6 +31,28 @@ add constraint fk_clientes
 foreign key (id_cliente)
 references clientes (id);
 
+create table clientes_p_juridica (
+
+cnpj int(14) not null primary key,
+inscricao_estadual int (9) not null,
+tipo_organizacao varchar(50),
+id_cliente int
+
+);
+
+alter table clientes_p_juridica
+add constraint fk_cliente_pjuridica
+foreign key (id_cliente)
+references clientes (id);
+
+
+insert into clientes 
+
+(primeiro_nome,sobrenome,rua,numero_casa,bairro,cidade,estado,celular)
+
+values (
+
+'jonathan','rodrigues','rua 143 bloco 02','12c','nova metropole','caucaia','ce',85986967166);
 
 
 
