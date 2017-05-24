@@ -52,7 +52,20 @@ insert into clientes
 
 values (
 
-'jonathan','rodrigues','rua 143 bloco 02','12c','nova metropole','caucaia','ce',85986967166);
+'jonathan','rodrigues','rua 143 bloco 02','12c','nova metropole','caucaia','ce',85986967166),
+'tatiane','gomes','rua 143 bloco 02','12c','nova metropole','caucaia','ce',859883111991),
+'adriano','kennedy','rua w 21 bloco 20','21c','araturi','caucaia','ce',85991577812),
+'fabricio','viana','rua das amelias','43','antonio bezerra','fortaleza','ce',981997753);
+
+insert into clientes_p_fisica 
+
+values
+
+('04950302361','m',19900314,1),
+('07722718342','f',18370923,2),
+('83772046304','m',19880726,3),
+('10351638458','m',19751211,4);
+
 
 
 
